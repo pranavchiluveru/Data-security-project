@@ -31,4 +31,4 @@ The implementation is shown using a simple Chat Application
 ------------------------------
 CS745 GIVEN PROJECT
 ------------------------------
-We have tried our best to do all the tasks provided to us, but we could do only 3 of them, whose pcap files have been included in this submission. 
+Pcap files have been included in this submission. 
